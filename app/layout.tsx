@@ -31,7 +31,7 @@ export default function RootLayout({
                 href="#contact"
                 className="relative py-1.5 before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10"
               >
-                <span className="relative text-lg">let&apos;s talk</span>
+                <span className="relative text-lg">contact me</span>
               </a>
             </div>
           </nav>
