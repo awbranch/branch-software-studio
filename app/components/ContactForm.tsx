@@ -9,9 +9,6 @@ import TextField from '@/components/TextField';
 import TextArea from '@/components/TextArea';
 import Button from '@/components/Button';
 
-const successMessage =
-  'Thank you for contacting Branch Software Studio. I look forward to talking with you.';
-
 export default function ContactForm() {
   const { onSubmit, onRestart, status } = useFormController('api/contact');
 
@@ -34,7 +31,7 @@ export default function ContactForm() {
     <FormWrapper
       status={status}
       onClose={onRestart}
-      successMessage={successMessage}
+      successMessage={'Thank you for contacting Branch Software Studio.'}
     >
       <form onSubmit={formik.handleSubmit}>
         {/* Move both the honeypot and form type fields offscreen */}
