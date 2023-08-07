@@ -1,5 +1,6 @@
 import React from 'react';
 import Text from '@/components/Text';
+import classNames from 'classnames';
 
 export const fieldClasses =
   'block w-full text-white/70 bg-transparent px-4 py-3 border border-white/20 outline-none focus:ring-1 focus:ring-primary';
@@ -11,12 +12,9 @@ interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
 export default function TextField({ error, className, ...props }: Props) {
   return (
     <div>
-      <input
-        className={[fieldClasses, className].join(' ').trim()}
-        {...props}
-      />
+      <input className={classNames(fieldClasses, className)} {...props} />
       {error && (
-        <Text variant="error" className="mt-1.5 px-4">
+        <Text variant="error" className="mt-2 px-4">
           {error}
         </Text>
       )}

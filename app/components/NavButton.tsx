@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 interface Props {
   href: string;
@@ -11,7 +12,7 @@ const buttonClass =
 
 export default function NavButton({ href, className, children }: Props) {
   return (
-    <a href={href} className={[buttonClass, className].join(' ').trim()}>
+    <a href={href} className={classNames(buttonClass, className)}>
       {children}
     </a>
   );

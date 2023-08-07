@@ -5,6 +5,7 @@ import { useFormik } from 'formik';
 import useFormController from '@/components/useFormController';
 import FormWrapper from '@/components/FormWrapper';
 import contactInfoSchema from '@/utils/contactFormSchema';
+import Label from '@/components/Label';
 import TextField from '@/components/TextField';
 import TextArea from '@/components/TextArea';
 import Button from '@/components/Button';
@@ -41,9 +42,24 @@ export default function ContactForm() {
         />
 
         <div className="flex flex-col space-y-6">
-          <TextField {...getFieldProps('name', formik)} />
-          <TextField {...getFieldProps('email', formik)} />
-          <TextArea {...getFieldProps('message', formik)} />
+          <div>
+            <Label htmlFor={'name'} className={'block mb-1'}>
+              name
+            </Label>
+            <TextField {...getFieldProps('name', formik)} />
+          </div>
+          <div>
+            <Label htmlFor={'email'} className={'block mb-1'}>
+              email
+            </Label>
+            <TextField {...getFieldProps('email', formik)} />
+          </div>
+          <div>
+            <Label htmlFor={'message'} className={'block mb-1'}>
+              message
+            </Label>
+            <TextArea {...getFieldProps('message', formik)} rows={6} />
+          </div>
         </div>
         <Button type="submit" className="mt-8">
           send
@@ -57,7 +73,6 @@ const getFieldProps = (name: string, formik: any) => {
   return {
     id: name,
     name: name,
-    placeholder: name,
     autoComplete: name,
     value: formik.values[name],
     onChange: formik.handleChange,

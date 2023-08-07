@@ -1,4 +1,5 @@
 import React, { ElementType } from 'react';
+import classNames from 'classnames';
 
 type Variant = 'h1' | 'h2' | 'body' | 'error';
 
@@ -31,7 +32,5 @@ export default function Text({
 }: Props) {
   const sizeClasses = sizes[variant];
   const Tag = as || tags[variant];
-  return (
-    <Tag className={[sizeClasses, className].join(' ').trim()}>{children}</Tag>
-  );
+  return <Tag className={classNames(sizeClasses, className)}>{children}</Tag>;
 }
