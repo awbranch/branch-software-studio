@@ -3,6 +3,9 @@ import Layout from "@/layouts/Layout.astro";
 import Section from "@/components/Section.astro";
 import Hero from "@/components/Hero.astro";
 import Services from "@/components/Services.astro";
+import About from "@/components/About.astro";
+import Work from "@/components/Work.astro";
+import Contact from "@/components/Contact.astro";
 ---
 
 <Layout>
@@ -11,5 +14,14 @@ import Services from "@/components/Services.astro";
   </Section>
   <Section id="services" background="black">
     <Services />
+  </Section>
+  <Section id="about" background="viking">
+    <About />
+  </Section>
+  <Section id="work" background="none">
+    <Work />
+  </Section>
+  <Section id="contact" background="viking">
+    <Contact />
   </Section>
 </Layout>
