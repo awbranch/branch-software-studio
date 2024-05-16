@@ -1,42 +1,15 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Link from "@/components/Link.astro";
+import Section from "@/components/Section.astro";
+import Hero from "@/components/Hero.astro";
+import Services from "@/components/Services.astro";
 ---
 
-<Layout title="">
-  <main class="container mx-auto p-4">
-    <div
-      class="mt-10 grid max-w-2xl grid-flow-row gap-10 lg:max-w-full lg:auto-cols-fr lg:grid-flow-col lg:gap-20"
-    >
-      <div class="max-w-lg space-y-6 lg:mt-20 lg:max-w-md">
-        <div class="inline-block">
-          <h1
-            class="xs:text-[4.8rem] border-b-4 border-gray-900 font-title text-[3.3rem] font-blackish uppercase leading-none"
-          >
-            BRANCH
-          </h1>
-          <h2
-            class="xs:text-[2.2rem] mt-2 font-title text-[1.5rem] font-semibold uppercase leading-none text-viking-600"
-          >
-            Software Studio
-          </h2>
-        </div>
-        <p class="text-lg">
-          Branch Software Studio creates simple, creative, and effective
-          websites.
-        </p>
-        <Link href="#">VIEW SERVICES</Link>
-      </div>
-      <div class="max-w-lg lg:max-w-full">
-        <img src="trees.jpeg" class="rounded-2xl border-8 border-gray-900" />
-      </div>
-    </div>
-    <!-- 
-		<h1 class="title">BRANCH via class</h1>
-			<h1 class="font-title font-black text-[3.75rem]">BRANCH black</h1>
-		<h1 class="font-title font-extrabold text-[3.75rem]">
-			BRANCH extrabold
-		</h1>
-		<h1 class="font-title font-bold text-[3.75rem]">BRANCH bold</h1> -->
-  </main>
+<Layout>
+  <Section id="hero" background="none">
+    <Hero />
+  </Section>
+  <Section id="services" background="black">
+    <Services />
+  </Section>
 </Layout>
