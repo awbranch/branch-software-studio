@@ -1,7 +1,45 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import Link from "@/components/Link.astro";
 ---
 
 <Layout title="">
-	<main class="container mx-auto p-4 bg-figi-500">Foo Bar</main>
+	<main class="container mx-auto p-4">
+		<div
+			class="grid grid-flow-row lg:grid-flow-col lg:auto-cols-fr gap-16 max-w-2xl lg:max-w-full mx-auto mt-10"
+		>
+			<div class="max-w-lg lg:max-w-full lg:mt-20 space-y-6">
+				<div class="inline-block">
+					<h1
+						class="font-title font-blackish text-[4.8rem] uppercase leading-none border-b-4 border-gray-900"
+					>
+						BRANCH
+					</h1>
+					<h2
+						class="font-title font-semibold uppercase text-[2.2rem] leading-none mt-2 text-viking-600"
+					>
+						Software Studio
+					</h2>
+				</div>
+				<p class="text-lg">
+					Branch Software Studio creates simple, creative, and
+					effective websites.
+				</p>
+				<Link href="#">VIEW SERVICES</Link>
+			</div>
+			<div class="max-w-lg lg:max-w-full">
+				<img
+					src="trees.jpeg"
+					class="rounded-2xl border-8 border-gray-900"
+				/>
+			</div>
+		</div>
+		<!-- 
+		<h1 class="title">BRANCH via class</h1>
+			<h1 class="font-title font-black text-[3.75rem]">BRANCH black</h1>
+		<h1 class="font-title font-extrabold text-[3.75rem]">
+			BRANCH extrabold
+		</h1>
+		<h1 class="font-title font-bold text-[3.75rem]">BRANCH bold</h1> -->
+	</main>
 </Layout>

@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -10,11 +12,31 @@ export default {
 			'2xl': '1024px',
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', ...defaultTheme.fontFamily.sans],
+				title: ['Montserrat', ...defaultTheme.fontFamily.sans],
+			},
 			colors: {
 				wood: {
-					100: '#f7f4ed',
-					200: '#e5e4e0',
+					50: '#f7f4ed',
+					100: '#dedcd5',
+					200: '#c6c3be',
+					300: '#adaba6',
+					400: '#94928e',
+					500: '#7c7a77',
+					600: '#63625f',
+					700: '#4a4947',
+					800: '#31312f',
+					900: '#191818',
 				},
+				viking: {
+					400: '#80d2ec',
+					500: '#6bbdd7',
+					600: '#1c859b',
+				},
+			},
+			fontWeight: {
+				blackish: '830',
 			}
 		},
 	},
