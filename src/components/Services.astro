@@ -21,20 +21,23 @@ const services = [
 ];
 ---
 
-<div class="text-left lg:text-center">
+<div class="text-center sm:text-left lg:text-center">
   <H1>Services</H1>
   <div
-    class="mx-auto mt-14 flex max-w-4xl flex-col justify-between lg:flex-row"
+    class="mx-auto mt-14 flex flex-col justify-around space-y-20 sm:space-y-8 lg:flex-row lg:space-y-0"
   >
     {
       services.map((s) => (
-        <div class="flex max-w-52 flex-col items-center">
-          <div class="flex h-32 w-32 items-center justify-center rounded-full bg-gray-400 bg-opacity-10 p-5 text-lg text-white">
-            <Icon icon={s.icon} size={48} classes="text-white" />
+        <div class="mx-auto flex max-w-xs flex-col items-center gap-6 sm:max-w-full sm:flex-row lg:max-w-52 lg:flex-col ">
+          <div class="flex-none">
+            <div class="flex h-32 w-32 items-center justify-center rounded-full bg-gray-400 bg-opacity-10 p-5 text-lg text-white">
+              <Icon icon={s.icon} size={48} classes="text-white" />
+            </div>
           </div>
-
-          <h2 class="mt-8 text-2xl font-bold uppercase">{s.title}</h2>
-          <p class="mt-2 text-sm leading-normal opacity-70">{s.text}</p>
+          <div class="flex-1">
+            <h2 class="text-2xl font-bold uppercase">{s.title}</h2>
+            <p class="mt-2 text-sm leading-normal opacity-70">{s.text}</p>
+          </div>
         </div>
       ))
     }
