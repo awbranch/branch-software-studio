@@ -1,29 +1,37 @@
 ---
 import ServiceIcon from "@/components/ServiceIcon.astro";
 import H1 from "@/components/H1.astro";
+
+const services = [
+  {
+    icon: "pencil",
+    title: "Design",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+  },
+  {
+    icon: "code",
+    title: "Code",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+  },
+  {
+    icon: "puzzle",
+    title: "Strategy",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+  },
+];
 ---
 
 <div class="text-left lg:text-center">
   <H1>Services</H1>
-
-  <p class="mx-auto my-10 max-w-xl">
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
-  </p>
   <div
-    class="mx-auto mt-20 flex max-w-4xl flex-col justify-between gap-20 lg:flex-row lg:gap-5"
+    class="mx-auto mt-14 flex max-w-4xl flex-col justify-between lg:flex-row"
   >
     {
-      [1, 2, 3].map((i) => (
-        <div class="flex flex-col items-center">
-          <ServiceIcon />
-          <p class="text-red font-red max-w-sm">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore
-          </p>
+      services.map((s) => (
+        <div class="flex max-w-52 flex-col items-center">
+          <ServiceIcon icon={s.icon} />
+          <h2 class="mt-10 text-2xl font-bold uppercase">{s.title}</h2>
+          <p class="mt-4 text-xs leading-4 text-gray-300">{s.text}</p>
         </div>
       ))
     }
