@@ -1,7 +1,68 @@
 ---
 import H1 from "@/components/H1.astro";
+import Icon from "@/components/Icon.astro";
+
+const contacts = [
+  {
+    name: "Contact",
+    icon: "envelope",
+    href: "#contact",
+  },
+  {
+    name: "GitHub",
+    icon: "github",
+    href: "https://github.com/awbranch",
+  },
+  {
+    name: "LinkedIn",
+    icon: "linkedin",
+    href: "https://www.linkedin.com/in/awbranch",
+  },
+];
 ---
 
-<div>
-  <H1>About</H1>
+<div
+  class="mt-10 grid grid-flow-row gap-10 lg:auto-cols-fr lg:grid-flow-col lg:gap-32"
+>
+  <div class="space-y-6">
+    <H1>About</H1>
+    <p>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </p>
+    <p>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </p>
+    <p>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </p>
+    <p>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </p>
+  </div>
+  <div class="max-w-md lg:max-w-full">
+    <img
+      src="headshot.jpg"
+      class="w-full rounded-2xl border-8 border-gray-900"
+    />
+    <h2 class="mt-5 text-center text-xl font-bold uppercase">Andrew Branch</h2>
+    <ul class="mx-auto mt-3 flex flex-row justify-center space-x-6">
+      {
+        contacts.map((c) => (
+          <li>
+            <a href={c.href} aria-label={c.name}>
+              <Icon icon={c.icon} color="black" size={30} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </div>

@@ -1,8 +1,13 @@
 ---
-import ServiceIcon from "@/components/ServiceIcon.astro";
+import Icon from "@/components/Icon.astro";
 import H1 from "@/components/H1.astro";
 
 const services = [
+  {
+    icon: "puzzle",
+    title: "Strategy",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+  },
   {
     icon: "pencil",
     title: "Design",
@@ -11,11 +16,6 @@ const services = [
   {
     icon: "code",
     title: "Code",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-  },
-  {
-    icon: "puzzle",
-    title: "Strategy",
     text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
   },
 ];
@@ -29,9 +29,12 @@ const services = [
     {
       services.map((s) => (
         <div class="flex max-w-52 flex-col items-center">
-          <ServiceIcon icon={s.icon} />
-          <h2 class="mt-10 text-2xl font-bold uppercase">{s.title}</h2>
-          <p class="mt-4 text-xs leading-4 text-gray-300">{s.text}</p>
+          <div class="flex h-32 w-32 items-center justify-center rounded-full bg-gray-400 bg-opacity-10 p-5 text-lg text-white">
+            <Icon icon={s.icon} size={48} classes="text-white" />
+          </div>
+
+          <h2 class="mt-8 text-2xl font-bold uppercase">{s.title}</h2>
+          <p class="mt-2 text-sm leading-normal opacity-70">{s.text}</p>
         </div>
       ))
     }
