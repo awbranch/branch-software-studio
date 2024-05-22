@@ -1,9 +1,29 @@
 ---
 import Section from "@/components/Section.astro";
+
+const startYear = 2024;
+const year = new Date().getFullYear();
 ---
 
 <footer>
   <Section id="footer" background="black">
-    <div class="min-h-[500px]"></div>
+    <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a href="/">
+        <img
+          src="/logo-blue.svg"
+          class="h-14"
+          alt="Branch Software Studio Logo"
+        />
+      </a>
+      <div class="text-center sm:text-left">
+        <p class="text-sm font-medium">
+          Simple, creative, and effective websites.
+        </p>
+        <p class="text-xs opacity-80">
+          © {year > startYear ? `${startYear} - ${year}` : startYear} Branch Software
+          Studio LLC.
+        </p>
+      </div>
+    </div>
   </Section>
 </footer>
