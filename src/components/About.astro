@@ -21,10 +21,24 @@ const contacts = [
 ];
 ---
 
+<style>
+  .circle-behind::before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    right: -1rem;
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    background: #80d2ec;
+    z-index: -1;
+  }
+</style>
+
 <div
   class="mt-10 grid grid-flow-row gap-10 lg:auto-cols-fr lg:grid-flow-col lg:gap-20"
 >
-  <div class="order-1 space-y-6 lg:order-2">
+  <div class="circle-behind relative order-1 space-y-6 xs:z-0 lg:order-2">
     <H1>About</H1>
     <p>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
