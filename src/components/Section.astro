@@ -5,10 +5,33 @@ import { clsx } from "clsx";
 interface Props {
   id: string;
   background: "none" | "viking" | "black";
+  wallpaper?: "none" | "sun" | "sunrise";
 }
 
-const { id, background } = Astro.props;
+const { id, background, wallpaper = "none" } = Astro.props;
+const sunColor = {
+  none: "000000",
+  viking: "80d2ec",
+  black: "ffffff",
+};
+
+const sunImage = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><circle cx='100' cy='100' r='100' style='fill: %23${sunColor[background]};'/></svg>")`;
 ---
+
+<style define:vars={{ sunImage }}>
+  .sun {
+    background-image: var(--sunImage);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: 25% 10%;
+  }
+  .sunrise {
+    background-image: var(--sunImage);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: bottom -200px left 30%;
+  }
+</style>
 
 <section
   id={id}
@@ -16,6 +39,8 @@ const { id, background } = Astro.props;
     clsx("py-20", {
       "bg-viking-500": background === "viking",
       "bg-neutral-900 text-wood-50": background === "black",
+      sun: wallpaper === "sun",
+      sunrise: wallpaper === "sunrise",
     })
   )}
 >
