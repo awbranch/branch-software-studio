@@ -1,7 +1,64 @@
 ---
 import H1 from "@/components/H1.astro";
+import Icon from "@/components/Icon.astro";
+import Label from "@/components/Label.astro";
+import Input from "@/components/Input.astro";
+import TextArea from "@/components/TextArea.astro";
+import Button from "@/components/Button.astro";
 ---
 
-<div>
-  <H1>Contact</H1>
+<div class="flex flex-row gap-20">
+  <div class="flex-1">
+    <H1 classes="mb-6">Contact</H1>
+    <p class="">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium.
+    </p>
+    <ul class="mt-8 space-y-4">
+      <li class="flex flex-row">
+        <div class="ml-2 min-w-6 text-center">
+          <Icon icon="envelope" size={18} classes="inline-block" />
+        </div>
+        <div class="ml-2">
+          <a href="mailto:hello@branchstudio.io">hello@branchstudio.io</a>
+        </div>
+      </li>
+      <li class="flex flex-row">
+        <div class="ml-2 min-w-6 text-center">
+          <Icon icon="phone" size={18} classes="inline-block" />
+        </div>
+        <div class="ml-2">
+          <a href="tel:5856155942">(585) 615-5942</a>
+        </div>
+      </li>
+      <li class="flex flex-row">
+        <div class="ml-2 min-w-6 text-center">
+          <Icon icon="location" size={18} classes="inline-block" />
+        </div>
+        <address class="ml-2 not-italic leading-snug">
+          <div>103 Westland Ave</div>
+          <div>Rochester, NY 14618</div>
+        </address>
+      </li>
+    </ul>
+  </div>
+  <div class="flex-1">
+    <form>
+      <div class="mb-8">
+        <Label classes="mb-2" forId="first_name">Name</Label>
+        <Input type="text" id="name" required />
+      </div>
+      <div class="mb-8">
+        <Label classes="mb-2" forId="email">Email</Label>
+        <Input type="email" id="email" required />
+      </div>
+      <div class="mb-12">
+        <Label classes="mb-2" forId="message">Message</Label>
+        <TextArea id="message" rows="4" />
+      </div>
+      <div class="text-right">
+        <Button type="submit">Submit</Button>
+      </div>
+    </form>
+  </div>
 </div>
