@@ -1,0 +1,10 @@
+{
+  "title": "Foundation Website",
+  "categories": ["Animal Welfare", "Something"],
+  "time": "2022",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "client": "Molly & Ed Shill Cares Foundation",
+  "role": "All",
+  "cover": "/projects/shill-cares/cover.jpg",
+  "logo": "/projects/shill-cares/logo.svg"
+}
