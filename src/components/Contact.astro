@@ -14,31 +14,15 @@ import Button from "@/components/Button.astro";
       Drop me a message describing how we could work together — looking forward
       to hearing from you.
     </p>
-    <ul class="mt-8 space-y-4">
+    <ul class="mt-4 space-y-1">
       <li class="flex flex-row">
-        <div class="ml-2 min-w-6 text-center">
-          <Icon icon="envelope" size={18} classes="inline-block" />
-        </div>
-        <div class="ml-2">
-          <a href="mailto:hello@branchstudio.io">hello@branchstudio.io</a>
-        </div>
+        <a
+          class="font-medium hover:text-white"
+          href="mailto:hello@branchstudio.io">hello@branchstudio.io</a
+        >
       </li>
-      <li class="flex flex-row">
-        <div class="ml-2 min-w-6 text-center">
-          <Icon icon="phone" size={18} classes="inline-block" />
-        </div>
-        <div class="ml-2">
-          <a href="tel:5856155942">(585) 615-5942</a>
-        </div>
-      </li>
-      <li class="flex flex-row">
-        <div class="ml-2 min-w-6 text-center">
-          <Icon icon="location" size={18} classes="inline-block" />
-        </div>
-        <address class="ml-2 not-italic leading-snug">
-          <div>103 Westland Ave</div>
-          <div>Rochester, NY 14618</div>
-        </address>
+      <li class="text-sm hover:text-white">
+        <a href="tel:5856155942">(585) 615-5942</a>
       </li>
     </ul>
   </div>
