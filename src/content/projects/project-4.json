@@ -1,0 +1,10 @@
+{
+  "title": "Non Profit Website",
+  "categories": ["Food Security", "Something"],
+  "time": "2022",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "client": "St. Peter's Kitchen",
+  "role": "All",
+  "cover": "/projects/st-peters/cover.jpg",
+  "logo": "/projects/st-peters/logo.svg"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Service Website",
+  "categories": ["Medical"],
+  "time": "2022",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "client": "Branch Acupuncture",
+  "role": "All",
+  "cover": "/projects/branch-acu/cover.jpg",
+  "logo": "/projects/branch-acu/logo.svg"
+}
