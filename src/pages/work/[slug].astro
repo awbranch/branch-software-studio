@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import Section from "@/components/Section.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Prose from "@/components/Prose.astro";
 
 export const prerender = true;
 
@@ -24,10 +26,31 @@ const { Content } = await project.render();
 
 <Layout>
   <Section id="article" background="none">
-    Hello! {project.data.title}
-
-    <h1>Page Goes Here</h1>
-
-    <Content />
+    <div class="mx-auto max-w-3xl">
+      <Breadcrumb
+        items={[
+          { name: "Work", href: "/#work", current: false },
+          { name: project.data.title, current: true },
+        ]}
+      />
+      <article class="mt-12 text-base leading-7">
+        <p class="text-base font-semibold leading-7 text-viking-600">
+          Case Study
+        </p>
+        <h1
+          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          {project.data.title}
+        </h1>
+        <p class="mt-6 text-xl leading-8">
+          {project.data.description}
+        </p>
+        <Prose>
+          <Content />
+        </Prose>
+      </article>
+    </div>
   </Section>
 </Layout>
+
+ß
