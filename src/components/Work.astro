@@ -51,22 +51,9 @@ const projects = await getCollection("projects");
               </a>
             </p>
           </div>
-          <div class="relative mt-8 flex items-center gap-x-4">
-            <img src={p.data.logo} alt="" class="h-10 w-10" />
-            <div class="text-sm leading-6">
-              <p class="font-semibold text-gray-900">
-                <a href="#">
-                  <span class="absolute inset-0" />
-                  {p.data.client}
-                </a>
-              </p>
-              <p class="text-gray-600">{p.data.role}</p>
-            </div>
-          </div>
         </div>
       </article>
     ))
   }
 
-  <!-- More posts... -->
 </div>
