@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Section from "@/components/Section.astro";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const projects = await getCollection("project");
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+interface Props {
+  project: CollectionEntry<"project">;
+}
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+---
+
+<Layout>
+  <Section id="article" background="none">
+    Hello! {project.data.title}
+
+    <h1>Page Goes Here</h1>
+
+    <Content />
+  </Section>
+</Layout>

@@ -1,9 +1,8 @@
 ---
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import H1 from "@/components/H1.astro";
-import Link from "@/components/Link.astro";
 
-const projects = await getCollection("projects");
+const projects = await getCollection("project");
 ---
 
 <H1>Work</H1>
@@ -18,42 +17,43 @@ const projects = await getCollection("projects");
 >
   {
     projects.map((p) => (
-      <article class="flex flex-col items-start justify-between">
-        <div class="relative w-full">
-          <img
-            src={p.data.cover}
-            alt=""
-            class="aspect-[16/9] w-full rounded bg-gray-100 object-cover object-top sm:aspect-[2/1] lg:aspect-[3/2]"
-          />
-          <div class="absolute inset-0 rounded ring-1 ring-inset ring-black/10" />
-        </div>
-        <div class="max-w-xl">
-          <div class="mt-8 flex items-center gap-x-4 text-xs">
-            <time datetime="2020-03-16" class="text-gray-500">
-              {p.data.time}
-            </time>
-            {p.data.categories.map((category) => (
-              <span class="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-wood-600">
-                {category}
-              </span>
-            ))}
+      <article class="group flex cursor-pointer flex-col items-start justify-between">
+        <a href={`/work/${p.slug}`}>
+          <div class="relative w-full">
+            <img
+              src={p.data.cover}
+              alt=""
+              class="aspect-[16/9] w-full rounded bg-gray-100 object-cover object-top sm:aspect-[2/1] lg:aspect-[3/2]"
+            />
+            <div class="absolute inset-0 rounded ring-1 ring-inset ring-black/10 group-hover:ring-black/40" />
           </div>
-          <div class="group">
-            <h3 class="mt-3 text-lg font-semibold leading-6 group-hover:text-gray-400">
-              <a href="#">{p.data.title}</a>
-            </h3>
-            <p class="mt-5 line-clamp-4 text-sm leading-6 text-gray-600">
-              {p.data.description}
-            </p>
-            <p>
-              <a class="mt-4 block text-sm font-normal" href="#">
-                Find Out More
-              </a>
-            </p>
+          <div class="max-w-xl">
+            <div class="mt-8 flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500">
+                {p.data.time}
+              </time>
+              {p.data.categories.map((category) => (
+                <span class="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-wood-600">
+                  {category}
+                </span>
+              ))}
+            </div>
+            <div>
+              <h3 class="mt-3 text-lg font-semibold leading-6 group-hover:text-viking-600">
+                {p.data.title}
+              </h3>
+              <p class="mt-5 line-clamp-4 text-sm leading-6 text-gray-600">
+                {p.data.description}
+              </p>
+              <p>
+                <span class="mt-4 block text-sm font-normal group-hover:underline group-hover:underline-offset-2">
+                  Find Out More
+                </span>
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </article>
     ))
   }
-
 </div>
