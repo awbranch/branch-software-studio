@@ -28,12 +28,9 @@ const { Content } = await project.render();
   <Section id="article" background="none">
     <div class="mx-auto max-w-3xl">
       <Breadcrumb
-        items={[
-          { name: "Work", href: "/#work", current: false },
-          { name: project.data.title, current: true },
-        ]}
+        items={[{ name: "Work Portfolio", href: "/#work", current: false }]}
       />
-      <article class="mt-12 text-base leading-7">
+      <article class="mt-8 text-base leading-7">
         <p class="text-base font-semibold leading-7 text-viking-600">
           Case Study
         </p>
@@ -52,5 +49,3 @@ const { Content } = await project.render();
     </div>
   </Section>
 </Layout>
-
-ß

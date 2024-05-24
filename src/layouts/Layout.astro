@@ -32,9 +32,11 @@ const org = "Branch Sofware Studio";
       rel="stylesheet"
     />
   </head>
-  <body class="bg-wood-50 text-gray-900 dark:bg-gray-900 dark:text-white">
+  <body
+    class="flex min-h-screen flex-col bg-wood-50 text-gray-900 dark:bg-gray-900 dark:text-white"
+  >
     <Navbar />
-    <main>
+    <main class="flex-grow">
       <slot />
     </main>
     <Footer />
