@@ -1,21 +1,9 @@
 ---
-title: "Measures for Justice: Commons"
+title: "Measures for Justice: National Data Portal"
 categories:
   - "Criminal Justice Reform"
   - "Data Portal"
-time: "2020 - 2022"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-cover: "/projects/mfj-commons/cover.png"
+time: "2017 - 2020"
+description: "The Measures for Justice data portal, launched in 2017, offers unprecedented transparency into local justice systems by collecting and analyzing criminal justice data and presenting them at the county level. The portal allows users to review and compare performance data of their local criminal justice system broken down by defendant and case characteristics such as race, sex, and offense severity."
+cover: "/projects/mfj-portal/cover.png"
 ---
-
-## Subheader
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-- List item 1
-- List item 2
-- List item 3
-
-<!-- ![Image Reference.](/projects/mfj-commons/cover.png) -->
