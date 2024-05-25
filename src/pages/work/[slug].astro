@@ -41,9 +41,10 @@ const { Content } = await project.render();
         <p class="mt-6 text-xl leading-8">
           {project.data.description}
         </p>
-        <Content />
+        <div class="max-w-2xl">
+          <Content />
+        </div>
       </article>
     </div>
   </Section>
 </Layout>
-
