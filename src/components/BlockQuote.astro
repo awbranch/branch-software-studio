@@ -1,0 +1,29 @@
+---
+interface Props {
+  name: string;
+  title: string;
+  image: string;
+  text: string;
+}
+
+const { name, title, image, text } = Astro.props;
+---
+
+<figure class="my-16 border-l-2 border-viking-500 pl-8">
+  <blockquote
+    class="text-xl font-semibold leading-8 tracking-tight text-gray-900"
+  >
+    <slot />
+  </blockquote>
+  <figcaption class="mt-8 flex gap-x-4">
+    <img
+      src={image}
+      alt={`${name} - ${title}`}
+      class="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"
+    />
+    <div class="text-sm leading-6">
+      <div class="font-semibold text-gray-900">{name}</div>
+      <div class="text-gray-600">{title}</div>
+    </div>
+  </figcaption>
+</figure>

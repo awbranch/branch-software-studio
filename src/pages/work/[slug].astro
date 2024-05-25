@@ -4,7 +4,6 @@ import type { CollectionEntry } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import Section from "@/components/Section.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
-import Prose from "@/components/Prose.astro";
 
 export const prerender = true;
 
@@ -42,10 +41,9 @@ const { Content } = await project.render();
         <p class="mt-6 text-xl leading-8">
           {project.data.description}
         </p>
-        <Prose>
-          <Content />
-        </Prose>
+        <Content />
       </article>
     </div>
   </Section>
 </Layout>
+
