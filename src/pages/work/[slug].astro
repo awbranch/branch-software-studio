@@ -25,22 +25,22 @@ const { Content } = await project.render();
 
 <Layout title="Work">
   <Section id="article" background="none">
-      <div class="mx-auto max-w-3xl">
-        <Breadcrumb
-          items={[{ name: "Work Portfolio", href: "/#work", current: false }]}
-        />
+    <div class="mx-auto max-w-3xl">
+      <Breadcrumb
+        items={[{ name: "Work Portfolio", href: "/#work", current: false }]}
+      />
       <article class="mt-8 text-base leading-7">
-          <p class="text-base font-semibold leading-7 text-viking-600">
-            Case Study
-          </p>
-          <h1
-            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-          >
-            {project.data.title}
-          </h1>
-          <p class="mt-6 text-xl leading-8">
-            {project.data.description}
-          </p>
+        <p class="text-base font-semibold leading-7 text-viking-600">
+          Case Study
+        </p>
+        <h1
+          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          {project.data.title}
+        </h1>
+        <p class="mt-6 text-xl leading-8">
+          {project.data.description}
+        </p>
         <div class="max-w-2xl">
           <Content />
         </div>
