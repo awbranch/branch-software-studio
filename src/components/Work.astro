@@ -1,8 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import H1 from "@/components/H1.astro";
+import A from "./mdx/A.astro";
 
 const projects = await getCollection("project");
+projects.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <H1>Work</H1>
