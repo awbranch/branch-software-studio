@@ -1,4 +1,6 @@
 ---
+import Image from "@/components/Image.astro";
+
 interface Props {
   name: string;
   title: string;
@@ -16,10 +18,11 @@ const { name, title, image, text } = Astro.props;
     “{text}”
   </blockquote>
   <figcaption class="mt-8 flex items-center gap-x-4">
-    <img
+    <Image
       src={image}
       alt={`${name} - ${title}`}
       class="mt-1 h-16 w-16 flex-none rounded-full bg-gray-50"
+      sizes="10vw"
     />
     <div class="text-sm leading-6">
       <div class="font-semibold text-gray-900">{name}</div>
