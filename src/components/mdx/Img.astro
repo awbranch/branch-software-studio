@@ -1,9 +1,18 @@
 ---
 const props = Astro.props;
+const { src, alt } = props;
+import Image from "@/components/Image.astro";
 ---
 
 <figure class="mb-24 mt-10">
-  <img class="rounded" {...props} />
+  <Image
+    src={src}
+    loading="eager"
+    alt="Abstract Trees"
+    class="w-full rounded-2xl border-8 border-gray-900"
+    sizes="(max-width: 768px) 100vw, 50vw"
+  />
+
   <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
     <svg
       class="mt-0.5 h-5 w-5 flex-none text-gray-300"

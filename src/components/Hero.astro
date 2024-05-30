@@ -1,12 +1,19 @@
 ---
 import LinkButton from "@/components/LinkButton.astro";
+import Image from "@/components/Image.astro";
 ---
 
 <div
   class="my-0 grid max-w-2xl grid-flow-row gap-10 lg:my-10 lg:max-w-full lg:auto-cols-fr lg:grid-flow-col lg:gap-20"
 >
   <div class="max-w-lg lg:max-w-full">
-    <img src="trees.jpeg" class="w-full rounded-2xl border-8 border-gray-900" />
+    <Image
+      src="/trees.jpg"
+      loading="eager"
+      alt="Abstract Trees"
+      class="w-full rounded-2xl border-8 border-gray-900"
+      sizes="(max-width: 768px) 100vw, 50vw"
+    />
   </div>
   <div class="mt-5 max-w-lg space-y-6 lg:mt-20 lg:max-w-md">
     <div class="inline-block">

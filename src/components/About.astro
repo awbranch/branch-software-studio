@@ -1,6 +1,7 @@
 ---
 import H1 from "@/components/H1.astro";
 import Icon from "@/components/Icon.astro";
+import Image from "@/components/Image.astro";
 
 const contacts = [
   {
@@ -47,7 +48,12 @@ const contacts = [
     </p>
   </div>
   <div class="order-2 max-w-md lg:order-1 lg:mt-8 lg:max-w-full">
-    <img src="headshot.jpg" class="w-full rounded-2xl" />
+    <Image
+      src="/headshot.jpg"
+      alt="Andrew Branch"
+      class="w-full rounded-2xl"
+      sizes="(max-width: 768px) 100vw, 50vw"
+    />
     <h2 class="mt-5 text-center text-xl font-bold uppercase">Andrew Branch</h2>
     <ul class="mx-auto mt-3 flex flex-row justify-center space-x-6">
       {

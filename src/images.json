@@ -1,0 +1,334 @@
+{
+   "/headshot.jpg": {
+      "width": 720,
+      "height": 720,
+      "src": "/headshot-720w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/headshot-512w.webp"
+         }
+      ]
+   },
+   "/projects/branch-acu/cover.jpg": {
+      "width": 1400,
+      "height": 875,
+      "src": "/projects/branch-acu/cover-1400w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/branch-acu/cover-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/branch-acu/cover-1024w.webp"
+         }
+      ]
+   },
+   "/projects/branch-acu/screenshot-1.jpg": {
+      "width": 2360,
+      "height": 5754,
+      "src": "/projects/branch-acu/screenshot-1-2360w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/branch-acu/screenshot-1-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/branch-acu/screenshot-1-1024w.webp"
+         },
+         {
+            "width": 2048,
+            "src": "/projects/branch-acu/screenshot-1-2048w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-commons/cover.png": {
+      "width": 1400,
+      "height": 875,
+      "src": "/projects/mfj-commons/cover-1400w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-commons/cover-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-commons/cover-1024w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-commons/jeff-reisig.jpg": {
+      "width": 336,
+      "height": 332,
+      "src": "/projects/mfj-commons/jeff-reisig-336w.webp",
+      "variants": []
+   },
+   "/projects/mfj-commons/screenshot-1.png": {
+      "width": 2402,
+      "height": 2562,
+      "src": "/projects/mfj-commons/screenshot-1-2402w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-commons/screenshot-1-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-commons/screenshot-1-1024w.webp"
+         },
+         {
+            "width": 2048,
+            "src": "/projects/mfj-commons/screenshot-1-2048w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-commons/screenshot-2.png": {
+      "width": 2402,
+      "height": 2713,
+      "src": "/projects/mfj-commons/screenshot-2-2402w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-commons/screenshot-2-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-commons/screenshot-2-1024w.webp"
+         },
+         {
+            "width": 2048,
+            "src": "/projects/mfj-commons/screenshot-2-2048w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-commons/screenshot-3.png": {
+      "width": 2402,
+      "height": 2589,
+      "src": "/projects/mfj-commons/screenshot-3-2402w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-commons/screenshot-3-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-commons/screenshot-3-1024w.webp"
+         },
+         {
+            "width": 2048,
+            "src": "/projects/mfj-commons/screenshot-3-2048w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-commons/screenshot-4.png": {
+      "width": 2402,
+      "height": 3342,
+      "src": "/projects/mfj-commons/screenshot-4-2402w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-commons/screenshot-4-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-commons/screenshot-4-1024w.webp"
+         },
+         {
+            "width": 2048,
+            "src": "/projects/mfj-commons/screenshot-4-2048w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-portal/cover.png": {
+      "width": 1400,
+      "height": 875,
+      "src": "/projects/mfj-portal/cover-1400w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-portal/cover-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-portal/cover-1024w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-portal/david-plouffe.jpg": {
+      "width": 400,
+      "height": 400,
+      "src": "/projects/mfj-portal/david-plouffe-400w.webp",
+      "variants": []
+   },
+   "/projects/mfj-portal/screenshot-1.png": {
+      "width": 1682,
+      "height": 2096,
+      "src": "/projects/mfj-portal/screenshot-1-1682w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-portal/screenshot-1-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-portal/screenshot-1-1024w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-portal/screenshot-2.png": {
+      "width": 1682,
+      "height": 2004,
+      "src": "/projects/mfj-portal/screenshot-2-1682w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-portal/screenshot-2-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-portal/screenshot-2-1024w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-portal/screenshot-3.png": {
+      "width": 1682,
+      "height": 2132,
+      "src": "/projects/mfj-portal/screenshot-3-1682w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-portal/screenshot-3-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-portal/screenshot-3-1024w.webp"
+         }
+      ]
+   },
+   "/projects/mfj-portal/screenshot-4.png": {
+      "width": 1682,
+      "height": 944,
+      "src": "/projects/mfj-portal/screenshot-4-1682w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/mfj-portal/screenshot-4-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/mfj-portal/screenshot-4-1024w.webp"
+         }
+      ]
+   },
+   "/projects/shill-cares/cover.jpg": {
+      "width": 1400,
+      "height": 875,
+      "src": "/projects/shill-cares/cover-1400w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/shill-cares/cover-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/shill-cares/cover-1024w.webp"
+         }
+      ]
+   },
+   "/projects/shill-cares/screenshot-1.jpg": {
+      "width": 2160,
+      "height": 5616,
+      "src": "/projects/shill-cares/screenshot-1-2160w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/shill-cares/screenshot-1-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/shill-cares/screenshot-1-1024w.webp"
+         },
+         {
+            "width": 2048,
+            "src": "/projects/shill-cares/screenshot-1-2048w.webp"
+         }
+      ]
+   },
+   "/projects/st-peters/cover.jpg": {
+      "width": 1400,
+      "height": 874,
+      "src": "/projects/st-peters/cover-1400w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/st-peters/cover-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/st-peters/cover-1024w.webp"
+         }
+      ]
+   },
+   "/projects/st-peters/screenshot-1.jpg": {
+      "width": 2400,
+      "height": 8393,
+      "src": "/projects/st-peters/screenshot-1-2400w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/st-peters/screenshot-1-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/st-peters/screenshot-1-1024w.webp"
+         },
+         {
+            "width": 2048,
+            "src": "/projects/st-peters/screenshot-1-2048w.webp"
+         }
+      ]
+   },
+   "/projects/wscah/cover.png": {
+      "width": 1760,
+      "height": 1100,
+      "src": "/projects/wscah/cover-1760w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/wscah/cover-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/wscah/cover-1024w.webp"
+         }
+      ]
+   },
+   "/projects/wscah/screenshot-1.jpg": {
+      "width": 1440,
+      "height": 4320,
+      "src": "/projects/wscah/screenshot-1-1440w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/projects/wscah/screenshot-1-512w.webp"
+         },
+         {
+            "width": 1024,
+            "src": "/projects/wscah/screenshot-1-1024w.webp"
+         }
+      ]
+   },
+   "/trees.jpg": {
+      "width": 1024,
+      "height": 1024,
+      "src": "/trees-1024w.webp",
+      "variants": [
+         {
+            "width": 512,
+            "src": "/trees-512w.webp"
+         }
+      ]
+   }
+}

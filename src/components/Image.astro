@@ -1,0 +1,48 @@
+---
+import type { ImageData } from "@/types/ImageData";
+import images from "@/images.json";
+
+interface Props {
+  src: string;
+  class?: string;
+  alt: string;
+  loading?: "lazy" | "eager";
+  decoding?: "sync" | "async" | "auto";
+  sizes?: string;
+}
+
+const {
+  src,
+  alt,
+  class: className = "",
+  loading = "lazy",
+  decoding = "async",
+  sizes,
+} = Astro.props;
+
+const image = images[src as keyof typeof images] as ImageData;
+const srcset = image
+  ? [
+      ...image.variants.map((s) => `${s.src} ${s.width}w`),
+      `${image.src} ${image.width}w`,
+    ].join(", ")
+  : "";
+---
+
+{
+  image ? (
+    <img
+      src={image.src}
+      class={className}
+      alt={alt}
+      width={image.width}
+      height={image.height}
+      loading={loading}
+      decoding={decoding}
+      srcset={srcset}
+      sizes={sizes}
+    />
+  ) : (
+    <span>Image "{src}" Not Found</span>
+  )
+}

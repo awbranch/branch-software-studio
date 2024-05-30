@@ -1,18 +1,15 @@
 import defaultTheme from "tailwindcss/defaultTheme";
+import { breakpoints } from "./src/utils/globals";
 
 /** @type {import('tailwindcss').Config} */
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    screens: {
-      xs: "450px",
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1024px",
-      "2xl": "1024px",
-    },
+    screens: Object.entries(breakpoints).reduce((a, [k, v]) => {
+      a[k] = `${v}px`;
+      return a;
+    }, {}),
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
