@@ -34,7 +34,7 @@ function ContactForm() {
   }
 
   return (
-    <div className="invisible">
+    <div>
       <form ref={formRef} onSubmit={submit}>
         {/* This field is hidden to prevent spam bots */}
         <div className="mb-8 hidden">
