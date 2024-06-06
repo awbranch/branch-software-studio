@@ -5,16 +5,11 @@ import * as ReactDOMServer from "react-dom/server";
 import type { APIRoute } from "astro";
 import { formSubject } from "@/utils/globals";
 import nodemailer from "nodemailer";
-import twilio from "twilio";
 import ContactConfirmation from "@/emails/ContactConfirmation";
 import ContactMessage from "@/emails/ContactMessage";
 
 const smtpUser = import.meta.env.SMTP_USER;
 const smtpPass = import.meta.env.SMTP_PASS;
-const twilioAccountSid = import.meta.env.TWILIO_ACCOUNT_SID;
-const twilioAuthToken = import.meta.env.TWILIO_AUTH_TOKEN;
-const twilioFromPhone = import.meta.env.TWILIO_FROM_PHONE;
-const twilioToPhone = import.meta.env.TWILIO_TO_PHONE;
 const emailFrom = import.meta.env.EMAIL_FROM;
 const emailTo = import.meta.env.EMAIL_TO;
 
@@ -27,8 +22,6 @@ const transporter = nodemailer.createTransport({
   logger: true,
   debug: true,
 });
-
-const smsClient = twilio(twilioAccountSid, twilioAuthToken);
 
 export const POST: APIRoute = async ({ request }) => {
   console.log("Contact POST---------------");
@@ -71,27 +64,6 @@ export const POST: APIRoute = async ({ request }) => {
       } accepted: ${JSON.stringify(
         status.accepted,
       )} rejected: ${JSON.stringify(status.rejected)}`,
-    );
-
-    /////////////////////////////////////////////////////////////////////////////
-    // Send SMS text messages to the foundation
-
-    // Ensure the message is less than 1600 chars
-    const smsMessage = `Branch Studio Message Received\nFrom: ${truncateTo(
-      name,
-      100,
-      true,
-    )} - ${truncateTo(email, 100, true)}\n${truncateTo(message, 250, true)}`;
-
-    const smsResponse = await smsClient.messages.create({
-      body: truncateTo(smsMessage, 1600),
-      from: twilioFromPhone,
-      to: twilioToPhone,
-    });
-
-    console.log(`Twilio Response to ${twilioToPhone}: ${smsResponse.sid}`);
-    console.debug(
-      `Twilio Response Details\n${JSON.stringify(smsResponse, null, 3)}`,
     );
 
     /////////////////////////////////////////////////////////////////////////////
