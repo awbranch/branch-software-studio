@@ -8,24 +8,24 @@ import nodemailer from "nodemailer";
 import ContactConfirmation from "@/emails/ContactConfirmation";
 import ContactMessage from "@/emails/ContactMessage";
 
-const smtpUser = import.meta.env.SMTP_USER;
-const smtpPass = import.meta.env.SMTP_PASS;
-const emailFrom = import.meta.env.EMAIL_FROM;
-const emailTo = import.meta.env.EMAIL_TO;
-
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: smtpUser,
-    pass: smtpPass,
-  },
-  logger: true,
-  debug: true,
-});
-
-export const POST: APIRoute = async ({ request }) => {
+export const POST: APIRoute = async ({ locals, request }) => {
   console.log("Contact POST---------------");
   try {
+    const smtpUser = locals.runtime.env.SMTP_USER;
+    const smtpPass = locals.runtime.env.SMTP_PASS;
+    const emailFrom = locals.runtime.env.EMAIL_FROM;
+    const emailTo = locals.runtime.env.EMAIL_TO;
+
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: smtpUser,
+        pass: smtpPass,
+      },
+      logger: true,
+      debug: true,
+    });
+
     const data: FormData = await request.formData();
 
     let name = sanitize(data, "name");
