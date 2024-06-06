@@ -1,6 +1,7 @@
 ---
 import H1 from "@/components/H1.astro";
 import ContactForm from "@/components/react/ContactForm";
+import type { idText } from "typescript";
 ---
 
 <div class="flex flex-col gap-16 lg:flex-row lg:gap-20">
@@ -22,6 +23,6 @@ import ContactForm from "@/components/react/ContactForm";
     </ul>
   </div>
   <div class="flex-1">
-    <ContactForm client:only />
+    <ContactForm client:visible />
   </div>
 </div>

@@ -17,13 +17,8 @@ pages_build_output_dir = "./dist"
 # - https://developers.cloudflare.com/pages/functions/bindings/#secrets
 [vars]
 BASE_URL = "https://branchstudio.io"
-SMTP_USER = "andrew@branchstudio.io"
-EMAIL_FROM = "andrew@branchstudio.io"
+EMAIL_FROM = "hello@branchstudio.io"
 EMAIL_TO = "andrew@branchstudio.io"
-TWILIO_FROM_PHONE = "+18445410610"
-TWILIO_TO_PHONE = "+15856155942"
-
-
 
 # Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare’s global network
 # Docs: https://developers.cloudflare.com/pages/functions/bindings/#workers-ai
