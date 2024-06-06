@@ -64,7 +64,13 @@ export const ContactMessage = ({
               {message}
             </Text>
             <Hr className="mx-0 my-[26px] w-full border border-solid border-[#eaeaea]" />
-            <Text className="text-[12px] leading-[24px] text-[#666666]">
+            <Heading
+              as="h3"
+              className="mb-2 text-[12px] font-normal text-[#666666]"
+            >
+              Simple, creative, and effective websites.
+            </Heading>
+            <Text className="m-0 p-0 text-[10px] leading-snug text-[#666666]">
               © {startYear} - {year} Branch Software Studio LLC. All rights
               reserved.
             </Text>
