@@ -53,7 +53,7 @@ export const ContactMessage = ({
             <Text className="text-[14px] leading-[24px] text-black">
               Message From: <strong>{name}</strong> (
               <Link
-                href={`mailto:{email}`}
+                href={`mailto:${email}`}
                 className="text-blue-600 no-underline"
               >
                 {email}
