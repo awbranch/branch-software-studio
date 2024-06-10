@@ -9,3 +9,5 @@ export const breakpoints = {
 };
 
 export const formSubject = "b49aa3ab-6457-4ede-9734-f60e7520dfbd";
+
+export const baseUrl = "https://branchstudio.io";

@@ -13,6 +13,7 @@ import {
   Tailwind,
 } from "@react-email/components";
 import * as React from "react";
+import { baseUrl } from "@/utils/globals";
 
 const startYear = 2023;
 const year = new Date().getFullYear();
@@ -22,8 +23,6 @@ interface ContactConfirmationProps {
   email: string;
 }
 
-const baseUrl =
-  process.env.BASE_URL || "https://branch-software-studio.pages.dev";
 export const ContactConfirmation = ({
   name,
   email,
