@@ -10,6 +10,12 @@
          }
       ]
    },
+   "/logo.png": {
+      "width": 160,
+      "height": 160,
+      "src": "/logo-160w.webp",
+      "variants": []
+   },
    "/projects/branch-acu/cover.jpg": {
       "width": 1400,
       "height": 875,
@@ -306,9 +312,9 @@
       ]
    },
    "/projects/wscah/screenshot-1.jpg": {
-      "width": 1440,
-      "height": 4320,
-      "src": "/projects/wscah/screenshot-1-1440w.webp",
+      "width": 1400,
+      "height": 3880,
+      "src": "/projects/wscah/screenshot-1-1400w.webp",
       "variants": [
          {
             "width": 512,
